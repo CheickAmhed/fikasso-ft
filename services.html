@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - Fikasso Security</title>
+    <meta name="description" content="Découvrez nos services de sécurité digitale: biométrie, protection des données, IA, vidéosurveillance et plus">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .hero-background::before {
+            background-image: url(assets/service_hero.png);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img class="logo-img" src="assets/logo.png" alt="Logo de Fikasso Security">
+                        </div>
+                    </div>
+                    
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                        <li><a href="about.html" class="nav-link">À Propos</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="team.html" class="nav-link">Équipe</a></li>
+                        <li><a href="testimonials.html" class="nav-link">Témoignages</a></li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <a href="contact.html" class="cta-button">Devis Gratuit</a>
+                    
+                    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Nos
+                        <span class="gradient-text">Services</span>
+                    </h1>
+                    <p class="hero-description">
+                        Découvrez notre gamme complète de solutions de sécurité digitale, 
+                        conçues pour protéger et optimiser votre entreprise.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="all-services">
+            <div class="container">
+                <div class="services-grid" id="all-services-grid">
+                    <!-- Services will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Notre Processus</h2>
+                    <p>Une approche méthodique pour garantir le succès de votre projet</p>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Consultation</h3>
+                        <p>Analyse de vos besoins et recommandations personnalisées</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Planification</h3>
+                        <p>Conception détaillée et planification du déploiement</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Implémentation</h3>
+                        <p>Installation et configuration professionnelle</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Support</h3>
+                        <p>Maintenance continue et support technique</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Our Services -->
+        <section class="service-benefits">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Pourquoi Choisir Nos Services ?</h2>
+                    <p>Des avantages qui font la différence pour votre entreprise</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Sécurité Maximale</h3>
+                        <p>Solutions conformes aux standards internationaux avec chiffrement de bout en bout</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Déploiement Rapide</h3>
+                        <p>Mise en œuvre efficace avec un minimum d'interruption de vos activités</p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Support Premium</h3>
+                        <p>Assistance technique 24/7 et formation complète de vos équipes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Modal -->
+        <div id="quote-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Demander un Devis</h3>
+                    <button class="close-modal" id="close-modal">&times;</button>
+                </div>
+                <form id="quote-form" class="modal-form">
+                    <div class="form-group">
+                        <label for="quote-name">Nom complet *</label>
+                        <input type="text" id="quote-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-email">Email *</label>
+                        <input type="email" id="quote-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-message">Détails du projet *</label>
+                        <textarea id="quote-message" name="message" rows="4" placeholder="Décrivez vos besoins..." required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                        <button type="button" class="btn btn-secondary" id="cancel-quote">Annuler</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Besoin d'une Solution Personnalisée ?</h2>
+                    <p>Contactez-nous pour discuter de vos besoins spécifiques et découvrir comment nos experts peuvent vous aider.</p>
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>Consultation Gratuite</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img class="logo-img" src="assets/logo.png" alt="Logo de Fikasso Security">
+                        </div>
+                    </div>
+                    <p>Startup spécialisée dans la digitalisation et la sécurisation des entreprises. Nous accompagnons les entreprises dans leur transformation numérique.</p>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/p/Fikasso-Security-100075835250126/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/fikasso-security-ba432a224/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>  
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Équipe</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Nos Services</h4>
+                    <ul>
+                        <li><a href="services.html#biometric">Sécurité Biométrique</a></li>
+                        <li><a href="services.html#data">Sécurisation des Données</a></li>
+                        <li><a href="services.html#ai">Solutions IA</a></li>
+                        <li><a href="services.html#surveillance">Vidéosurveillance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ouagadougou, Burkina Faso</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+226 XX XX XX XX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@fikassotech.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Fikasso Security SAS. Tous droits réservés.</p>
+                    <div class="footer-links">
+                        <a href="#">Politique de Confidentialité</a>
+                        <a href="#">Conditions d'Utilisation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/mock-data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Admin Fikasso Security</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar" id="admin-sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Fikasso</h1>
+                        <span>Security Admin</span>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">Principal</div>
+                    <a href="dashboard.html" class="nav-item active">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Gestion</div>
+                    <a href="services.html" class="nav-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>Services</span>
+                    </a>
+                    <a href="team.html" class="nav-item">
+                        <i class="fas fa-users"></i>
+                        <span>Équipe</span>
+                    </a>
+                    <a href="testimonials.html" class="nav-item">
+                        <i class="fas fa-star"></i>
+                        <span>Témoignages</span>
+                    </a>
+                    <a href="messages.html" class="nav-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Messages</span>
+                    </a>
+                    <a href="blog.html" class="nav-item">
+                        <i class="fas fa-blog"></i>
+                        <span>Blog</span>
+                    </a>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Configuration</div>
+                    <a href="settings.html" class="nav-item">
+                        <i class="fas fa-cog"></i>
+                        <span>Paramètres</span>
+                    </a>
+                </div>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <div class="user-avatar">A</div>
+                    <div class="user-details">
+                        <h4>Admin</h4>
+                        <p>Administrateur</p>
+                    </div>
+                </div>
+                <button class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Déconnexion</span>
+                </button>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="admin-main" id="admin-main">
+            <header class="admin-header">
+                <div class="admin-header-content">
+                    <div class="admin-header-left">
+                        <button class="sidebar-toggle" id="sidebar-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <h1 class="page-title">Dashboard</h1>
+                    </div>
+                    <div class="admin-header-right">
+                        <div class="header-search">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Rechercher...">
+                        </div>
+                        <div class="header-notifications">
+                            <button class="notification-btn">
+                                <i class="fas fa-bell"></i>
+                                <span class="notification-badge">3</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="admin-content">
+                <div class="content-header">
+                    <h2 class="content-title">Vue d'ensemble</h2>
+                    <div class="content-actions">
+                        <button class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            <span>Exporter</span>
+                        </button>
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i>
+                            <span>Nouveau</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Statistics Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <h3 class="stat-title">Services Actifs</h3>
+                            <div class="stat-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                        </div>
+                        <div class="stat-value">6</div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+2 ce mois</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <h3 class="stat-title">Membres d'Équipe</h3>
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="stat-value">4</div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+1 ce mois</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <h3 class="stat-title">Témoignages</h3>
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="stat-value">3</div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+1 cette semaine</span>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <h3 class="stat-title">Messages</h3>
+                            <div class="stat-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        <div class="stat-value">12</div>
+                        <div class="stat-change positive">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>+5 aujourd'hui</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Activity -->
+                <div class="data-table">
+                    <div class="table-header">
+                        <h3 class="table-title">Activité Récente</h3>
+                        <div class="table-actions">
+                            <a href="#" class="btn btn-secondary btn-sm">
+                                <span>Voir tout</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="table-content">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Action</th>
+                                    <th>Type</th>
+                                    <th>Date</th>
+                                    <th>Statut</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nouveau message de contact</td>
+                                    <td>Message</td>
+                                    <td>Il y a 2 heures</td>
+                                    <td><span class="status-badge pending">En attente</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Service "Sécurité Biométrique" mis à jour</td>
+                                    <td>Service</td>
+                                    <td>Il y a 1 jour</td>
+                                    <td><span class="status-badge active">Actif</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Nouveau membre d'équipe ajouté</td>
+                                    <td>Équipe</td>
+                                    <td>Il y a 3 jours</td>
+                                    <td><span class="status-badge active">Actif</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Témoignage approuvé</td>
+                                    <td>Témoignage</td>
+                                    <td>Il y a 5 jours</td>
+                                    <td><span class="status-badge active">Actif</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Article de blog publié</td>
+                                    <td>Blog</td>
+                                    <td>Il y a 1 semaine</td>
+                                    <td><span class="status-badge active">Actif</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Quick Actions -->
+                <div class="stats-grid" style="margin-top: 2rem;">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <h3 class="stat-title">Actions Rapides</h3>
+                            <div class="stat-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
+                            <a href="services.html" class="btn btn-secondary btn-sm">
+                                <i class="fas fa-plus"></i>
+                                <span>Ajouter un service</span>
+                            </a>
+                            <a href="team.html" class="btn btn-secondary btn-sm">
+                                <i class="fas fa-user-plus"></i>
+                                <span>Ajouter un membre</span>
+                            </a>
+                            <a href="blog.html" class="btn btn-secondary btn-sm">
+                                <i class="fas fa-pen"></i>
+                                <span>Écrire un article</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <h3 class="stat-title">Statistiques du Site</h3>
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="color: #cccccc; font-size: 0.875rem;">Visiteurs ce mois</span>
+                                <span style="color: #ffffff; font-weight: 600;">2,847</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                <span style="color: #cccccc; font-size: 0.875rem;">Pages vues</span>
+                                <span style="color: #ffffff; font-weight: 600;">8,942</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: #cccccc; font-size: 0.875rem;">Taux de rebond</span>
+                                <span style="color: #00FFD1; font-weight: 600;">34%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/mock-data.js"></script>
+    <script src="js/admin-auth.js"></script>
+    <script src="js/admin-common.js"></script>
+    <script>
+        // Check authentication
+        checkAuth();
+        
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update stats from mock data
+            updateDashboardStats();
+        });
+        
+        function updateDashboardStats() {
+            // Update service count
+            const serviceCount = document.querySelector('.stat-card:first-child .stat-value');
+            if (serviceCount) {
+                serviceCount.textContent = mockData.services.length;
+            }
+            
+            // Update team count
+            const teamCount = document.querySelector('.stat-card:nth-child(2) .stat-value');
+            if (teamCount) {
+                teamCount.textContent = mockData.team.length;
+            }
+            
+            // Update testimonials count
+            const testimonialsCount = document.querySelector('.stat-card:nth-child(3) .stat-value');
+            if (testimonialsCount) {
+                testimonialsCount.textContent = mockData.testimonials.length;
+            }
+            
+            // Update messages count (simulated)
+            const messagesCount = document.querySelector('.stat-card:nth-child(4) .stat-value');
+            if (messagesCount) {
+                const messages = JSON.parse(localStorage.getItem('contactMessages') || '[]');
+                messagesCount.textContent = messages.length;
+            }
+        }
+    </script>
+</body>
+</html>
