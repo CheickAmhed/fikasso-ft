@@ -1896,6 +1896,10 @@ select:focus {
         grid-template-columns: 1fr;
     }
     
+    .about-card, .faq-item {
+        height: fit-content;
+    }
+
     .approach-grid,
     .process-grid {
         grid-template-columns: 1fr;

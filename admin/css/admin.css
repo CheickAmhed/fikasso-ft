@@ -1,5 +1,3 @@
-/* Admin Panel Styles */
-
 /* Login Page Styles */
 .admin-login-body {
     background: linear-gradient(135deg, #000000 0%, #111111 50%, #000000 100%);
@@ -11,7 +9,7 @@
 }
 
 .login-container {
-    max-width: 400px;
+    max-width: 700px;
     width: 100%;
     padding: 2rem;
 }
@@ -56,12 +54,6 @@
     font-size: 2rem;
     margin: 0;
     color: #ffffff;
-}
-
-.login-header .logo-text span {
-    color: #00FFD1;
-    font-size: 1rem;
-    font-weight: 500;
 }
 
 .login-header h2 {
