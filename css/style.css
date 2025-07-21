@@ -69,14 +69,14 @@ a {
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
+    background: #08acec;
     color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: #7ccc26;
     transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(132,204,44, 0.5);
 }
 
 /* Gradient Text */
@@ -337,15 +337,15 @@ section {
     background: rgba(255, 255, 255, 0.5);
     padding: 2.5rem;
     border-radius: 16px;
-    border: 1px solid rgba(132,204,44, 0.2);
+    border: 1px solid #7ccc26;
     transition: all 0.3s ease;
     text-align: center;
 }
 
 .feature-card:hover {
     transform: translateY(-10px);
-    border-color: rgba(132,204,44, 0.7);
-    box-shadow: 0 20px 40px rgba(132,204,44, 0.2);
+    border-color: rgba(37, 150, 190, 0.7);
+    box-shadow: 0 20px 40px rgba(37, 150, 190, 0.2);
 }
 
 .feature-icon {
@@ -440,13 +440,14 @@ section {
     background: #ffffff;
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid rgba(132,204,44, 0.2);
+    border: 1px solid #7ccc26;
     transition: all 0.3s ease;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    border-color: rgba(132,204,44, 0.7);
+    border-color: rgba(37, 150, 190, 0.7);
+    box-shadow: 0 20px 40px rgba(37, 150, 190, 0.2);
 }
 
 .service-image {
@@ -468,6 +469,7 @@ section {
     font-size: 1.25rem;
     margin-bottom: 1rem;
     transition: color 0.3s ease;
+    color: #08acec;
 }
 
 .service-card:hover .service-title {
@@ -997,6 +999,11 @@ select:focus {
     border: 1px solid #7ccc26;
 }
 
+.achievement-item:hover {
+    border-color: rgba(37, 150, 190, 0.7);
+    box-shadow: 0 20px 40px rgba(37, 150, 190, 0.2);
+}
+
 .achievement-number {
     font-size: 2rem;
     font-weight: 700;
@@ -1035,7 +1042,8 @@ select:focus {
 }
 
 .about-card:hover {
-    border-color: rgba(132,204,44, 0.7);
+    border-color: rgba(37, 150, 190, 0.7);
+    box-shadow: 0 20px 40px rgba(37, 150, 190, 0.2);
 }
 
 .about-card h3 {
@@ -1069,7 +1077,8 @@ select:focus {
 }
 
 .value-card:hover {
-    border-color: #08acec;
+    border-color: rgba(37, 150, 190, 0.7);
+    box-shadow: 0 20px 40px rgba(37, 150, 190, 0.2);
 }
 
 .value-icon {
@@ -1208,7 +1217,7 @@ select:focus {
 
 /* Services Page Styles */
 .all-services {
-    background: #000000;
+    background: #ffffff;
     padding: 5rem 0;
 }
 
@@ -1216,17 +1225,22 @@ select:focus {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid #222222;
+    border: 1px solid #7ccc26;
     transition: all 0.3s ease;
 }
 
 .service-card-2:hover {
     transform: translateY(-10px);
-    border-color: rgba(132,204,44, 0.7);
+    border-color: rgba(37, 150, 190, 0.7);
+    box-shadow: 0 20px 40px rgba(37, 150, 190, 0.2);
 }
 
-.service-content {
-    padding: 2rem;
+.service-card-2:hover .service-image {
+    transform: scale(1.1);
+}
+
+.service-card-2:hover .service-title {
+    color: #7ccc26;
 }
 
 .service-header {
@@ -1257,6 +1271,10 @@ select:focus {
     font-size: 1rem;
 }
 
+.feature-item span {
+    color: #7ccc26;
+}
+
 .service-actions {
     display: flex;
     gap: 1rem;
@@ -1270,14 +1288,26 @@ select:focus {
 }
 
 .process-section {
-    background: #111111;
+    background: #eeeeee;
     padding: 5rem 0;
+}
+
+.process-section h2 {
+    color: #08acec;
+}
+
+.process-section h3 {
+    color: #7ccc26;
 }
 
 .process-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+}
+
+.process-grid p{
+    color: #888888;
 }
 
 .process-step {
@@ -1301,8 +1331,16 @@ select:focus {
 }
 
 .service-benefits {
-    background: #000000;
+    background: #ffffff;
     padding: 5rem 0;
+}
+
+.service-benefits h2 {
+    color: #08acec;
+}
+
+.service-benefits h3 {
+    color: #7ccc26;
 }
 
 .benefits-grid {
@@ -1312,17 +1350,18 @@ select:focus {
 }
 
 .benefit-card {
-    background: rgba(17, 17, 17, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     padding: 2.5rem;
     border-radius: 16px;
-    border: 1px solid #222222;
+    border: 1px solid #7ccc26;
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .benefit-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(132,204,44, 0.7);
+    transform: translateY(-10px);
+    border-color: rgba(37, 150, 190, 0.7);
+    box-shadow: 0 20px 40px rgba(37, 150, 190, 0.2);
 }
 
 .benefit-icon {
