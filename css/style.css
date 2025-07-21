@@ -1036,6 +1036,7 @@ select:focus {
 .about-card {
     background: rgba(255, 255, 255, 0.5);
     padding: 2rem;
+    height: 240px;
     border-radius: 16px;
     border: 1px solid #7ccc26;
     transition: all 0.3s ease;
@@ -1442,6 +1443,11 @@ select:focus {
 }
 
 /* Testimonials Page Styles */
+.testimonials-section {
+    background: #ffffff;
+    padding: 5rem 0;
+}
+
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -1450,39 +1456,48 @@ select:focus {
 }
 
 .testimonial-card {
-  background-color: #111;
+  background-color: #ffffff;
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid #2c2c2c;
-  color: #eee;
+  border: 1px solid #7ccc26;
+  color: #888888;
   box-shadow: 0 0 10px rgba(0,255,209,0.05);
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .testimonial-card:hover {
-  transform: translateY(-5px);
-  border-color: #2596be;
+    transform: translateY(-10px);
+    border-color: rgba(37, 150, 190, 0.7);
+    box-shadow: 0 20px 40px rgba(37, 150, 190, 0.2);
+}
+
+.testimonial-rating{
+  color: #7ccc26;
 }
 
 .testimonial-card p {
   font-style: italic;
-  color: #ccc;
+  color: #888888;
   margin-bottom: 1rem;
 }
 
 .testimonial-card h4 {
   font-size: 1.2rem;
   margin: 0;
-  color: #fff;
+  color: #2596be;
 }
 
 .testimonial-card span {
   font-size: 0.9rem;
-  color: #aaa;
 }
 
 
 /* Blog Page Styles */
+.blog-section {
+    background: #ffffff;
+    padding: 5rem 0;
+}
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1491,16 +1506,17 @@ select:focus {
 }
 
 .blog-card {
-  background-color: #111;
+  background-color: #ffffff;
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid #2a2a2a;
+  border: 1px solid #7ccc26;
   transition: transform 0.3s ease;
 }
 
 .blog-card:hover {
-  transform: translateY(-5px);
-  border-color: #2596be;
+    transform: translateY(-10px);
+    border-color: rgba(37, 150, 190, 0.7);
+    box-shadow: 0 20px 40px rgba(37, 150, 190, 0.2);
 }
 .blog-image{
     width: 100%;
@@ -1512,19 +1528,23 @@ select:focus {
 .blog-card h3 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: #51bcf2;
 }
 
 .blog-card p {
-  color: #ccc;
+  color: #888888;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
 .blog-meta {
   font-size: 0.85rem;
-  color: #999;
+  color: #888888;
   margin-bottom: 0.5rem;
+}
+
+.blog-author {
+  color: #7ccc26;
 }
 
 .blog-link {
@@ -1644,7 +1664,7 @@ select:focus {
 
 /* Contact Page Styles */
 .contact-section {
-    background: #000000;
+    background: #ffffff;
     padding: 5rem 0;
 }
 
@@ -1657,6 +1677,11 @@ select:focus {
 .contact-info-section h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #51bcf2;
+}
+
+.contact-info-section h3 {
+    color: #7ccc26;
 }
 
 .contact-info-section > p {
@@ -1705,10 +1730,10 @@ select:focus {
 }
 
 .response-time {
-    background: rgba(17, 17, 17, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     padding: 1.5rem;
     border-radius: 12px;
-    border: 1px solid #222222;
+    border: 1px solid #7ccc26;
 }
 
 .response-time h3 {
@@ -1724,10 +1749,10 @@ select:focus {
 }
 
 .contact-form-section {
-    background: rgba(17, 17, 17, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     padding: 2rem;
     border-radius: 16px;
-    border: 1px solid #222222;
+    border: 1px solid #7ccc26;
 }
 
 .contact-form {
@@ -1749,7 +1774,7 @@ select:focus {
 
 .form-group label {
     margin-bottom: 0.5rem;
-    color: #cccccc;
+    color: #888888;
     font-weight: 500;
 }
 
@@ -1757,8 +1782,8 @@ select:focus {
 .form-group select,
 .form-group textarea {
     padding: 0.75rem;
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid #333333;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #7ccc26;
     border-radius: 8px;
     color: #ffffff;
     font-size: 1rem;
@@ -1786,7 +1811,7 @@ select:focus {
 }
 
 .faq-section {
-    background: #111111;
+    background: #cccccc;
     padding: 5rem 0;
 }
 
@@ -1803,10 +1828,14 @@ select:focus {
 }
 
 .faq-item {
-    background: rgba(0, 0, 0, 0.5);
+    background: #ffffff;
+    height: 150px;
     padding: 1.5rem;
     border-radius: 12px;
-    border: 1px solid #222222;
+    border: 1px solid #7ccc26;
+}
+.faq-section h2 {
+    color: #51bcf2;
 }
 
 .faq-item h3 {
