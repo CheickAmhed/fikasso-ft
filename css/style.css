@@ -1391,24 +1391,33 @@ select:focus {
 }
 
 /* Team Page Styles */
+.team-section {
+    background: #ffffff;
+    padding: 5rem 0;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
+
 .team-card {
-  background: #111;
-  border: 1px solid #2c2c2c;
+  background: #ffffff;
+  border: 1px solid #7ccc26;
   padding: 2rem;
   text-align: center;
   border-radius: 12px;
   transition: 0.3s ease;
 }
+
 .team-card:hover {
-  transform: scale(1.03);
-  border-color: #00ffd1;
+    transform: translateY(-10px);
+    border-color: rgba(37, 150, 190, 0.7);
+    box-shadow: 0 20px 40px rgba(37, 150, 190, 0.2);
 }
+
 .team-card img {
   border-radius: 50%;
   width: 120px;
@@ -1417,11 +1426,17 @@ select:focus {
   object-fit: cover;
   margin-bottom: 1rem;
 }
+
+.team-specialties{
+    color: #7ccc26;
+}
+
 .team-card h3 {
   margin: 0.5rem 0;
   font-size: 1.3rem;
-  color: white;
+  color: #2596be;
 }
+
 .team-card p {
   color: #aaa;
 }
